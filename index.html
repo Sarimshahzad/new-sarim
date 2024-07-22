@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excellent Coaching</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+</head>
+<style>
+  
+  body {
+    /* background-color:rgb(112, 165, 151); */
+
+  background-color: white;
+  }
+  /* navigation styling start */
+  .navbar .navbar-nav .nav-item a {
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+
+  }
+
+
+  .navbar .nav-icon .icon {
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    /* font-size: larger; */
+    color: white;
+  }
+
+  .container-fluid {
+    background-color: rgb(65,129,112);
+    font-family: Argent CF;
+    position: sticky;
+
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+
+  }
+
+/* navigation end */
+
+  #footerbg {
+    background-color: rgb(168, 57, 57);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+   
+   
+  }
+  
+
+  .link-secondary {
+    text-decoration: overline;
+    font-size: 25px;
+    color: white;
+  }
+
+
+
+  /* Animated cards */
+
+
+  .card {
+    width: 220px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 3PX;
+    text-align: center;
+    justify-content: center;
+    margin-left: 1%;
+
+
+  }
+
+  .card:hover .card-body {
+    bottom: 0;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .card-body {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    bottom: -80%;
+    background: #26485362;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    transition: 2s;
+  }
+
+  .card-title {
+
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .card-subtitle {
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .card-info {
+
+    font-size: 14px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+  }
+
+  .card-btn {
+    color: rgb(242, 242, 242);
+    background: #4484a1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 180px;
+    text-align: center;
+    justify-content: center;
+  }
+  .card-btn a {
+    color: white;
+  }
+  .set-bg-1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: grey;
+    background-image: linear-gradient(to right, rgb(92, 78, 78), rgb(39, 37, 37));
+  }
+
+  /* teacher section */
+  .card-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card5 {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.info {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info li {
+  margin-bottom: 10px;
+}
+
+/* Card 1 Styling */
+.card-1 {
+  background: linear-gradient(to bottom, #296455, #cceeff);
+  color: #333;
+}
+
+.card-1 .profile img {
+  border: 5px solid #fff;
+}
+
+
+/* teacher section end */
+
+
+/* footer start */
+  #footerbg {
+    background-color:rgb(65, 129, 112);
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        padding:10px;
+       }
+       .link-secondary{
+        text-decoration: overline;
+        font-size: 25px;
+        color: white;
+       }
+
+
+/* footer end */
+
+
+
+
+
+</style>
+
+<body>
+ <!-- strat of navigation -->
+ <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid" >
+    <a class="navbar-brand"  style="height: 50px; width: 85px;">Excellent Coaching</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="courses/commerce.html">Commerce</a></li>
+            <li><a class="dropdown-item" href="courses/pre-med.html">Pre-medical</a></li>
+            <li><a class="dropdown-item" href="courses/computer.html">Computer</a></li>
+            <li><a class="dropdown-item" href="courses/pre-eng.html">Pre-engineering</a></li>
+            <li><a class="dropdown-item" href="courses/humanities.html">Humanities</a></li>
+            <li>
+            </li>
+          </ul>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">contact us</a>
+          </li>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link active " href="" tabindex="-1" aria-disabled="true">menu</a>
+        </li> -->
+      </ul>
+    
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-icon">
+          <a class="icon" href="contact.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li class="nav-icon">
+          <a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- end of nav// -->
+
+
+  <!-- carousels start -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="IMAGES/img2.jpg" height="650px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block " style="color: black;">
+          <h1>Education gives us knowledge</h1>
+          <p>The best Courses you will find here</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="IMAGES/img.jpg" height="650px" class="d-block w-100 " alt="...">
+        <div class="carousel-caption d-none d-md-block" style="color:black;">
+          <h1>Importance of Education</h1>
+          <p>Education Contributes to human development</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="IMAGES/tech_tools.webp"  height="650px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+          <h1>Cultivate moral values and cultural understanding</h1>
+          <p>Without education we can not achieve any success in life</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  </div>
+<!--carousel end-->
+  <br> <br>
+  <!-- Animated cards -->
+  <center>
+  <div class="container">
+    <h1>OUR COURSES</h1>
+    <div class="row">
+      <div class="card">
+        <img src="IMAGES/image5.jpg" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">commerce</h1>
+          <!-- <p class="card-subtitle">chartered accountancy</p> -->
+          <p class="card-info">Commerce deals with the various aspects of business, trade, accounting, financial information/transactions and merchandising.</p>
+          
+          <button class="card-btn btn-dark "><a href="courses/commerce.html">view course </a></button>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="IMAGES/photo2.jpg" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">pre-engineering</h1> 
+          <p class="card-info">designed to facilitate the successful transition of qualified students into an engineering major.</p>
+          <button class="card-btn btn-dark"><a href="courses/pre-eng.html">view course</a></button>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="IMAGES/images (1).jpg" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">Computer</h1>
+          <p class="card-subtitle">digital marketing</p>
+          <p class="card-info">computer have lots of memory but no imagination.</p>
+          <button class="card-btn btn-dark"><a href="courses/computer.html">view course</a></button>
+        </div>
+      </div>
+
+
+      <div class="card">
+
+        <img src="IMAGES/image3.jpg" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">Pre-medical</h1>
+          <p class="card-info"> Pre-Medical program is an introductory intermediate-level course focused on the medical field, featuring core subjects like biology, chemistry, and physics.</p>
+          <button class="card-btn btn-dark"><a href="courses/pre-med.html">view course</a></button>
+        </div>
+      </div>
+
+
+      <div class="card">
+
+        <img src="IMAGES/Online-courses.jpg" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">Humanities</h1>
+          <p class="card-info">Humanities courses can include the study of history, philosophy and religion, modern and ancient languages and literature, fine and performing arts, media and cultural studies,</p>
+          <button class="card-btn btn-dark"><a href="courses/humanities.html">view course</a></button>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div><br><br>
+
+  <!-- teacher section start -->
+  <h1>OUR TEACHER</h1>
+	<div class="card-container2">
+		<div class="card5 card-1">
+			<div class="profile">
+				<img src="IMAGES/teacher1.jpg" height="50px" alt="Teacher Image">
+				<h1>Zehra</h1>
+				<h2>Commerce</h2>
+        <!-- <h4>Digital Marketing</h4> -->
+			</div>
+			<div class="info">
+				<p>Welcome to my classroom!</p>
+				<ul>
+					<li>Contact: <a href="mailto:zehra@email.com">zehra@email.com</a></li>
+					<li>Phone: 0312-1233300</li>
+				</ul>
+			</div>
+		</div>
+
+    <div class="card5 card-1">
+			<div class="profile">
+				<img src="IMAGES/male.webp" height="50px" alt="Teacher Image">
+				<h1>Mete </h1>
+				<h2>Pre-medical</h2>
+			</div>
+			<div class="info">
+				<p>Welcome to my classroom!</p>
+				<ul>
+					<li>Contact: <a href="mailto:mete@email.com">mete@email.com</a></li>
+					<li>Phone: 0334-9066745</li>
+				</ul>
+			</div>
+		</div>
+
+
+    <div class="card5 card-1">
+			<div class="profile">
+				<img src="IMAGES/teacher2.jpg" height="50px" alt="Teacher Image">
+				<h1>yelda</h1>
+				<h2>Computer</h2>
+			</div>
+			<div class="info">
+				<p>Welcome to my classroom!</p>
+				<ul>
+					<li>Contact: <a href="mailto:yelda@email.com">yelda@email.com</a></li>
+					<li>Phone:0313-5643003</li>
+				</ul>
+			</div>
+		</div>
+
+    <div class="card5 card-1">
+			<div class="profile">
+				<img src="IMAGES/male teacher.jpg" height="50px" alt="Teacher Image">
+				<h1>Harun</h1>
+				<h2>Pre-engineering</h2>
+        <!-- <h4>Science</h4> -->
+			</div>
+			<div class="info">
+				<p>Welcome to my classroom!</p>
+				<ul>
+					<li>Contact: <a href="mailto:harun@email.com">harun@email.com</a></li>
+					<li>Phone:0332-8977067</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+               <!-- teacher section end -->
+</center>
+</body>
+<!-- start footer -->
+<br> <br>
+<footer class="text-center text-lg-start " id="footerbg">
+  <div class="me-5 d-none d-lg-block">
+
+  </div>
+  
+
+  <!-- Section -->
+
+  <!-- Section: Links  -->
+  <section class="links">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+         Excellent Coaching
+          </h6>
+          <p>
+            To provide our children with a balanced and well-rounded education, develop them to their full potential, and nurture them into good citizens, conscious of their responsibilities to family, society and country
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Resources
+          </h6>
+          <p>
+            <a href="#" class="text-reset">help center</a>
+          </p>
+
+          <p>
+            <a href="#" class="text-reset">ask questions</a>
+          </p>
+
+          <p>
+            <a href="#" class="text-reset">send feedback</a>
+          </p>
+
+          <p>
+            <a href="#" class="text-reset">terms of use</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">privacy policy</a>
+          </p>
+        </div>
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#" class="text-reset">home</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">menu</a>
+          </p>
+          <p>
+            <a href="#" class="text-reset">courses</a>
+          </p>
+
+          <p>
+            <a href="#" class="text-reset">Contact Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-white"></i> north nazimabad</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-white"></i>
+           Excellentcoaching@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-white"></i> 03180114454</p>
+          <p><i class="fas fa-print me-3 text-white"></i> 03168805467</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+  <div class="text-center p-4">
+  </div>
+
+  <div class="me-5 d-none d-lg-block">
+
+  </div>
+  <div>
+    <center>
+    <a href="" class="me-4 link-secondary">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="me-4 link-secondary">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="me-4 link-secondary">
+      <i class="fab fa-google"></i>
+    </a>
+    <a href="" class="me-4 link-secondary">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+  </div>
+</center>
+
+</footer>
+<!-- Footer end -->
+
+
+</html>

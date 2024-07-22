@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Argent CF;
+
+}
+.heading{
+    color: rgb(0, 0, 0);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-family: 'Lobster, cursive';
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(73, 112, 99);
+}
+.heading h1 p{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+
+.about-content h2{
+    font-weight: 400;
+    font-family:Argent CF;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #828a9b;;
+     color: #000;
+     font-size: 19px;
+     text-decoration: none;
+     border-radius: 25px;
+     margin-top: 15px;
+     transition: 0.3 ease;
+}
+.about-content .read-more:hover{
+    background-color: #b4a7a7;
+}
+@media screen and (max-width:768px){
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+font-size: 36px;
+
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+    .card{
+        margin-left: 20px;
+    }
+}
+
+
+.why-choose-section {
+    padding: 7rem 0; }
+    
+    .why-choose-section h2{
+        font-weight: 400;
+        font-family:Argent CF;
+        font-size: 30px;
+        margin-bottom: 25px;
+        color:rgb(0, 0, 0);
+    }
+    .why-choose-section .img-wrap {
+      position: relative; }
+      .why-choose-section .img-wrap:before {
+        position: absolute;
+        content: "";
+        width: 255px;
+        height: 217px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translate(-40%, -40%);
+        z-index: -1; }
+      .why-choose-section .img-wrap img {
+
+        margin-right: 0px;
+        margin-bottom: 20px;
+        border-radius: 20px; }
+p{
+    color:white;
+}
+
+.feature {
+ 
+    margin-bottom: 30px; }
+    .feature .icon {
+      display: inline-block;
+      color: rgb(0, 0, 0);
+      position: relative;
+      margin-bottom: 20px; }
+      .feature .icon:before {
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+        content: "";
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        /* background: rgba(59, 93, 80, 0.2); */
+        border-radius: 50%;
+        right: -8px;
+        bottom: 0; }
+    .feature h3 {
+      font-size: 20px;
+      font-family: Argent CF;
+      color: rgb(0, 0, 0); 
+    }
+   
+    .feature p {
+      font-size: 14px;
+      line-height: 22px;
+      color: rgb(0, 0, 0); }
+
+      .why-choose-section .icon .imf-fluid{
+      
+        width: 80px;
+        height: 80px;
+    }
+    .img-wrap img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s step-start;
+        cursor: pointer;
+    }
+    .img-wrap:hover img{
+        transform: scale(1.2);
+    } 
+     
+
+
+/* * footer start * */
+#footerbg {
+    background-color:rgb(65, 129, 112);
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        padding:10px;
+       }
+       .link-secondary{
+        text-decoration: overline;
+        font-size: 25px;
+        color: white;
+       }
+
+
+/* footer end */
+
+ 
